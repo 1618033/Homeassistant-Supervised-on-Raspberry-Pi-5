@@ -90,7 +90,7 @@ sudo wget https://github.com/HuckleberryLovesYou/Homeassistant-Supervised-on-Ras
 ## kernel setup
 Add the configurations to the config.txt and cmdline.txt files by using this command.
 ```
-sudo apt install nano && sudo bash -c 'echo "kernel=kernel8.img" | cat - /boot/firmware/config.txt > temp && mv temp /boot/firmware/config.txt' && sudo nano /boot/firmware/cmdline.txt && echo "apparmor=1 security=apparmor" | sudo tee -a /boot/firmware/cmdline.txt && sudo reboot
+sudo apt install nano && sudo bash -c 'echo "kernel=kernel8.img" | cat - /boot/firmware/config.txt > temp && mv temp /boot/firmware/config.txt' && sudo nano /boot/firmware/cmdline.txt && echo " apparmor=1 security=apparmor" | sudo tee -a /boot/firmware/cmdline.txt && sudo reboot
 ````
 # Making your system ready to run Homeassistant
 ## Installation of docker and docker-compose
